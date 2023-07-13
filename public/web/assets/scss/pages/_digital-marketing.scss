@@ -1,0 +1,178 @@
+/*--
+/*  19 - Digital Marketing CSS
+/*----------------------------------------*/
+
+// // Home Style Two
+
+// // Call to Action Wrapper
+// .call-to-action-2-wrapper {
+//     display: flex;
+
+//     & .call-to-action-2-img {
+//         width: 40%;
+//         background-position: center right;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         @media #{$large-mobile}{
+//             display: none;
+//         }
+//     }
+
+//     & .call-to-action-2-content {
+//         background-color: #A13152;
+//         width: 60%;
+//         background-position: center center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         padding: 165px 0px 165px 80px;
+//         position: relative;
+//         z-index: 1;
+//         @media #{$tablet-device}{
+//             padding: 60px;
+//         }
+//         @media #{$large-mobile}{
+//             width: 100%;
+//             padding: 55px;
+//         }
+
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             left: 0;
+//             top: 0;
+//             background: linear-gradient(260deg, #EB5252 0%, #A13152 100%);
+//             width: 100%;
+//             height: 100%;
+//             opacity: 0.92;
+//             z-index: -1;
+//         }
+
+//         & .title {
+//             color: $white;
+//             font-size: 30px;
+//             font-weight: 700;
+//             line-height: 42px;
+//             max-width: 490px;
+//             @media #{$tablet-device}{
+//                 font-size: 28px;
+//             }
+//             @media #{$large-mobile}{
+//                 font-size: 26px;
+//                 line-height: 36px;
+//             }
+//         }
+
+//         & .btn {
+//             margin-top: 20px;
+//             background: $white;
+//             color: $heading-color;
+//             transition: $transition-default;
+
+//             &:hover {
+//                 background: $secondary;
+//                 color: $white;
+//             }
+//         }
+//     }
+// }
+
+// // Home Style Three
+
+// // Call to Action-3 Section
+// .call-to-action-3-section {
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+//     z-index: 1;
+
+//     &::before {
+//         content: "";
+//         height: 100%;
+//         width: 100%;
+//         top: 0;
+//         left: 0;
+//         position: absolute;
+//         background-color: #36A4A1;
+//         opacity: 0.94;
+//         z-index: -1;
+
+//     }
+// }
+
+// // Call to Action-3 Wrapper
+// .call-to-action-3-wrapper {
+//     display: flex;
+//     background: $white;
+//     border-radius: 10px;
+//     overflow: hidden;
+
+//     & .call-to-action-3-image {
+//         width: 48%;
+//         background-position: center center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         @media #{$large-mobile}{
+//             display: none;
+//         }
+//     }
+
+//     & .call-to-action-3-content {
+//         width: 52%;
+//         padding: 85px 50px 85px 70px;
+//         @media #{$desktop-device, $tablet-device}{
+//             padding: 60px;
+//         }
+//         @media #{$large-mobile}{
+//             width: 100%;
+//             padding: 60px;
+//         }
+//         @media #{$small-mobile}{
+//             width: 100%;
+//             padding: 40px;
+//         }
+
+//         & .title {
+//             color: $heading-color;
+//             font-size: 36px;
+//             font-weight: 700;
+//             line-height: 48px;
+//             @media #{$tablet-device}{
+//                 font-size: 30px;
+//                 line-height: 42px;
+//             }
+//             @media #{$large-mobile}{
+//                 font-size: 26px;
+//                 line-height: 36px;
+//             }
+//         }
+
+//         & .btn {
+//             margin-top: 20px;
+//         }
+//     }
+// }
+
+// // Home Style Four
+
+// .call-to-action-4-section {
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+//     z-index: 1;
+
+//     &::before {
+//         content: "";
+//         height: 100%;
+//         width: 100%;
+//         top: 0;
+//         left: 0;
+//         position: absolute;
+//         background-color: #362674;
+//         opacity: 0.94;
+//         z-index: -1;
+//     }
+// }
+
+

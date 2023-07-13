@@ -1,0 +1,43 @@
+/*--
+/*  13 - Brand CSS
+/*----------------------------------------*/
+
+// Brand Wrapper 
+.brand-wrapper{
+          
+}
+
+// Brand Title
+.brand-title{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $body-font;
+    color: $heading-color;
+    margin-top: -7px;
+    @media #{$small-mobile}{
+        font-size: 20px;
+    }
+
+    & span{
+        color: $primary;
+    }
+}
+
+// Brand Active
+.brand-active{
+    max-width: 1000px;
+    width: 100%;
+    margin: 55px auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

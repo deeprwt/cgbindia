@@ -1,0 +1,79 @@
+/*--
+/*  30. - Page Banner CSS
+/*----------------------------------------*/
+
+// Page Banner Section
+.page-banner-section {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    @media #{$tablet-device}{
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+}
+
+// Page Banner
+.page-banner {
+
+    & .title {
+        font-size: 40px;
+        line-height: 1.25;
+        font-weight: 700;
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+    }
+
+    & .breadcrumb {
+        margin-bottom: 0;
+        margin-top: 20px;
+    
+        @media #{$large-mobile} {
+            margin-top: 10px;
+        }
+
+        & .breadcrumb-item {
+            color: $heading-color;
+            font-size: 15px;
+            font-family: $heading-font;
+            font-weight: 600;
+            @media #{$tablet-device, $large-mobile} {
+                font-size: 16px;
+            }
+
+            &+  .breadcrumb-item {
+                padding-left: 8px;
+
+                &::before {
+                    content: "\f106";
+                    font-family: flaticon !important;
+                    font-size: 10px;
+                    font-weight: 400;
+                    margin-top: 3px;
+                    padding-right: 8px;
+                    color: $heading-color;
+                    @media #{$tablet-device, $large-mobile} {
+                        font-size: 11px;
+                    }
+                    @media #{$small-mobile} {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            &.active {
+                
+            }
+
+            
+        }
+    }
+}
+

@@ -1,0 +1,318 @@
+/*--
+/*  04 - Features CSS
+/*----------------------------------------*/
+
+.features-section {
+    
+}
+// Features Wrapper
+.features-wrapper {
+    margin-top: -90px;
+    overflow: hidden;
+    z-index: 5;
+    position: relative;
+}
+
+// Features Col
+.features-col {
+    border: 1px solid #E2E0E0;
+    background: $white;
+    @media #{$large-mobile}{
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    
+
+    &:first-child {
+        border-right: 0;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        @media #{$large-mobile}{
+            border-right: 1px solid #E2E0E0;
+        }
+    }
+    &:last-child {
+        border-left: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        @media #{$large-mobile}{
+            border-left: 1px solid #E2E0E0;
+            margin-bottom: 0px;
+        }
+    }
+    .features-item {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        align-items: center;
+        padding-bottom: 35px;
+        @media #{$desktop-device}{
+            padding: 40px;
+        }
+        @media #{$tablet-device}{
+            padding: 35px;
+            padding-bottom: 45px;
+        }
+        @media #{$large-mobile}{
+            display: block;
+            text-align: center;
+            padding: 40px;
+            padding-bottom: 45px;
+        }
+    
+        
+    
+        & .features-icon {
+            width: 130px;
+            height: 90px;
+            @media #{$large-mobile}{
+                margin: 0 auto;
+            }
+        }
+    
+        & .features-content {
+            margin-left: -8px;
+            @media #{$desktop-device, $tablet-device}{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            @media #{$large-mobile}{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+    
+            & .title {
+                font-size: 18px;
+                line-height: 18px;
+                color: #333;
+                font-weight: 700;
+            }
+    
+            & p {
+                font-size: 16px;
+                line-height: 16px;
+                color: #333;
+                font-weight: 400;
+                padding-top: 10px;
+            }
+        }
+    }
+    
+}
+
+// Home Style Two
+
+// Features-2 Section
+.features-2-section {
+    background: linear-gradient(250deg, #EC5B5B 0%, #78275B 100%);
+    padding-top: 32px;
+}
+
+// Features-2 Item
+.features-2-item {
+    display: flex;
+    padding-bottom: 30px;
+    
+    & .features-2-icon {
+        & img {
+            
+        }
+    }
+
+    & .features-2-content {
+        flex: 1;
+        margin-left: 15px;
+        padding-right: 30px;
+        @media #{$desktop-device}{
+            padding-right: 10px;
+        }
+
+        & .title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: $white;
+        }
+
+        & p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.88;
+            color: $white;
+        }
+    }
+}
+
+// Home Style Three
+
+// Feature-3 Wrapper
+.features-3-wrapper {
+    padding-top: 35px;
+}
+
+// Feature-3 Item
+.features-3-item {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 0;
+    margin-top: 30px;
+    @media #{$desktop-device, $tablet-device, $large-mobile}{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+
+    & .features-2-icon {
+
+    }
+
+    & .features-2-content {
+        margin-left: 20px;
+    }
+}
+
+// Home Style Four
+
+// Features-4 Section
+.features-4-section {
+    background: #FFC107;
+    padding-top: 32px;
+}
+
+// Features-4 Wrapper
+.features-4-wrapper {
+
+    & .features-2-item {
+
+        & .features-2-content {
+            margin-left: 20px;
+            @media #{$desktop-device}{
+                margin-left: 15px;
+            }
+
+            & .title {
+                color: #232323;
+                transition: $transition-default;
+
+                &:hover {
+                    color: #4D4C4C;
+                }
+            }
+
+            & p {
+                color: $heading-color;
+            }
+        }
+    }
+}
+
+// Home Style Five
+
+// Features-s Section
+.features-5-wrapper {
+    margin-top: -30px;
+}
+
+.features-5-content {
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 40px;
+    margin-top: 30px;
+    @media #{$desktop-device, $large-mobile}{
+        background-position: center center;
+    }
+    @media #{$tablet-device}{
+        background-position: center center;
+        padding: 55px 35px;
+    }
+    @media #{$small-mobile}{
+        background-position: center center;
+        padding: 55px 32px;
+    }
+
+    &.features-1 {
+        margin-right: 8px;
+        @media #{$large-mobile}{
+            margin-right: 0;
+        }
+    }
+    &.features-2 {
+        margin-left: 8px;
+        @media #{$large-mobile}{
+            margin-left: 0;
+        }
+    }
+    
+
+    & .title {
+        color: #29303B;
+        font-family: $body-font;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    & p {
+        font-size: 16px;
+        color: #686f7a;
+        line-height: 30px;
+        max-width: 280px;
+        margin-top: 18px;
+    }
+
+    & .btn {
+        margin-top: 20px;
+    }
+}
+
+// Features-6 Section
+
+.features-6-section {
+    background: #FCF9F0;
+    position: relative;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+}
+
+.features-6-item-wrapper {
+    padding-top: 55px;
+    @media #{$tablet-device}{
+        padding-top: 40px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 20px;
+    }
+}
+
+.features-6-item  {
+    padding: 0 35px;
+    margin-top: 30px;
+    @media #{$desktop-device}{
+        padding: 0 20px;
+    }
+    @media #{$tablet-device, $small-mobile}{
+        padding: 0px 0px;
+    }
+    & .features-6-icon {
+
+    }
+
+    & .features-6-content {
+
+        & .title {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+            color: $heading-color;
+            margin-top: 25px;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #686f7a;
+            margin-top: 10px;
+        }
+    }
+}

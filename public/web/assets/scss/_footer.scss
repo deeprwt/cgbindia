@@ -1,0 +1,50 @@
+/*--
+/*  31. Footer CSS
+/*----------------------------------------*/
+
+// Footer Logo
+.footer-logo {
+    max-width: 150px;
+    height: 40px;
+}
+
+// Footer Section
+.footer-section {
+    background-color: $footer-bg;
+}
+
+
+// Footer Copyright
+.footer-copyright {
+    border-top: 1px solid #FFFFFF26;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+}
+
+// Footer Copyright Wrapper
+.copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media #{$large-mobile} {
+        display: block;
+        text-align: center;
+    }
+    & .copyright-design {
+        margin-top: 10px;
+        & p {
+            font-size: 15px;
+            color: $footer-text;
+        }
+    }
+
+    & .copyright-text {
+        margin-top: 10px;
+        & p {
+            font-size: 15px;
+            color: $footer-text;
+        }
+    }
+}

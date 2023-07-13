@@ -1,0 +1,110 @@
+/*--
+/*  4.2 - Counter CSS
+/*----------------------------------------*/
+
+.features-section {
+    transform: translateY(-90px);
+    z-index: 1;
+}
+
+.features-wrapper {
+    
+}
+
+
+.features-col {
+    border: 1px solid #E2E0E0;
+    background: $white;
+    @media #{$large-mobile}{
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    
+
+    &:first-child {
+        border-right: 0;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        @media #{$large-mobile}{
+            border-right: 1px solid #E2E0E0;
+        }
+    }
+    &:last-child {
+        border-left: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        @media #{$large-mobile}{
+            border-left: 1px solid #E2E0E0;
+            margin-bottom: 0px;
+        }
+    }
+    .features-item {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+        align-items: center;
+        padding-bottom: 35px;
+        @media #{$desktop-device}{
+            padding: 40px;
+        }
+        @media #{$tablet-device}{
+            padding: 35px;
+            padding-bottom: 45px;
+        }
+        @media #{$large-mobile}{
+            display: block;
+            text-align: center;
+            padding: 40px;
+            padding-bottom: 45px;
+        }
+    
+        
+    
+        & .features-icon {
+            width: 130px;
+            height: 90px;
+            @media #{$large-mobile}{
+                margin: 0 auto;
+            }
+        }
+    
+        & .features-content {
+            margin-left: -8px;
+            @media #{$desktop-device, $tablet-device}{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+            @media #{$large-mobile}{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+    
+            & .title {
+                font-size: 18px;
+                line-height: 18px;
+                color: #333;
+                font-weight: 700;
+            }
+    
+            & p {
+                font-size: 16px;
+                line-height: 16px;
+                color: #333;
+                font-weight: 400;
+                padding-top: 10px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+

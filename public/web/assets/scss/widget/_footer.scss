@@ -1,0 +1,158 @@
+/*--
+/*  31.1 - Footer Widget CSS
+/*----------------------------------------*/
+
+// Footer Widget Area
+.footer-widget-wrapper {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+// Footer Widget
+.footer-widget {
+    margin-top: 40px;
+    color: lighten($body-light, 25);
+
+    &.widget-about {
+        padding-right: 70px;
+    }
+}
+
+// Footer Logo 
+.footer-logo{}
+
+// Widget Info
+.footer-widget-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: $white;
+}
+
+// Widget Info
+.widget-info{
+    padding-top: 15px;
+
+    & p{
+        font-size: 16px;
+        font-weight: 500;
+        color: $footer-text;
+        margin-top: 15px;
+        
+        & i{
+            color: #a1dfc9;
+            margin-right: 10px;
+            line-height: 28px;
+            display: inline-block;
+        }
+        & a{}
+        & span{}
+    }
+
+    & .social{
+        display: flex;
+        margin-top: 15px;
+
+        & li{
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            & a{
+                font-size: 16px;
+
+                &:hover{
+                    
+                    & a {
+                        background-color: $primary;
+                    color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Widget Link
+.widget-link{
+    padding-top: 20px;
+
+    & .link{
+        & li{
+            margin-top: 5px;
+
+            & a{
+                font-size: 16px;
+                color: $footer-text;
+                transition: $transition-default;
+                -webkit-transition: $transition-default;
+                -moz-transition: $transition-default;
+                -ms-transition: $transition-default;
+                -o-transition: $transition-default;
+             
+                &:hover {  
+                    text-decoration: underline;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.widget-info {
+
+    & li {
+        margin-top: 10px;
+        & .media {
+            display: flex;
+            align-items: flex-start;
+            
+            & i {
+                color: $primary;
+                display: inline-block;
+                font-size: 18px;
+                margin: 2px 20px 0px 0px;
+            }
+
+            & .media-body {
+                flex: 1;
+            }
+        }
+    }
+}
+
+
+// Back Button 
+.back-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    z-index: 20;
+    border-radius: 50%;
+    background-color: $primary;
+    border: 0;
+    transition: $transition-default;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    opacity: 0;
+    transform: translateX(130%) rotate(90deg);
+
+    
+
+    &:hover{
+        background-color: $secondary;
+        color: $white;
+    }
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0) rotate(90deg);
+    }
+}

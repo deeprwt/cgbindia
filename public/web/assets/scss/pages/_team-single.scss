@@ -1,0 +1,363 @@
+/*--
+/*  26 - Team Single CSS
+/*----------------------------------------*/
+
+// Team Profile Wrapper
+.team-profile-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Team Profile
+.team-profile {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    @media #{$desktop-device}{
+        width: 70%;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        width: 100%;
+    }
+
+    & .profile-img {
+        
+        @media #{$desktop-device}{
+            max-width: 42%;
+        }
+        @media #{$tablet-device, $large-mobile}{
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+            margin-bottom: 45px;
+        }
+        & img {
+            width: 285px;
+            height: 285px;
+            border-radius: 50%;
+            image-rendering: crisp-edges;
+            @media #{$tablet-device}{
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+
+    & .profile-content {
+        flex: 1;
+        padding-left: 55px;
+        padding-right: 60px;
+        padding-top: 15px;
+        @media #{$laptop-device}{
+            padding-right: 35px;
+        }
+        @media #{$desktop-device}{
+            padding-left: 35px;
+            padding-right: 40px;
+        }
+        @media #{$tablet-device, $large-mobile}{
+            padding-left: 0px;
+            padding-right: 40px;
+        }
+        @media #{$small-mobile}{
+            padding-left: 0px;
+            padding-right: 25px;
+        }
+
+        & .name {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 700;
+            color: $heading-color1;
+            @media #{$large-mobile}{
+                font-size: 28px;
+            }
+        }
+
+        & .designation {
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 600;
+            color: $heading-color1;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #7a7a7a;
+            margin-top: 15px;
+        }
+    }
+}
+
+// Team Profile Info
+.team-profile-info {
+    width: 30%;
+    border-left: 1px solid #ddd;
+    padding-left: 50px;
+    padding-top: 60px;
+    @media #{$laptop-device}{
+        padding-left: 35px;
+    }
+    @media #{$desktop-device}{
+        width: 30%;
+        padding-left: 35px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        width: 100%;
+        border-left: 0;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    & ul {
+
+        & .team-info {
+            font-size: 16px;
+            line-height: 21px;
+            color: #7a7a7a;
+            margin-bottom: 20px;
+
+            & span {
+                font-weight: 700;
+                color: $black;
+                padding-right: 10px;
+                @media #{$laptop-device, $desktop-device}{
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+
+    & .profile-social-wrap {
+        margin-top: 30px;
+        & ul {
+
+            & li {
+                display: inline-block;
+                margin-right: 10px;
+
+                & a {
+                    font-size: 18px;
+                    transition: $transition-default;
+
+                    &.profile-twitter {
+                        color: $twitter;
+                    }
+                    &.profile-facebook {
+                        color: $facebook;
+                    }
+                    &.profile-instagram {
+                        color: $instagram;
+                    }
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Team Profile Description
+.team-profile-description {
+    padding-top: 115px;
+    @media #{$tablet-device}{
+        padding-top: 50px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 40px;
+    }
+
+    & .title {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        color: $heading-color1;
+        margin-bottom: 35px;
+        @media #{$large-mobile}{
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 30px;
+        color: #7a7a7a;
+    }
+}
+
+// Skill Section
+.skill-section {
+    padding-top: 15px;
+}
+
+// Skill Content
+.skill-content {
+    margin-top: 40px;
+    padding-top: 0;
+    padding-right: 35px;
+    @media #{$tablet-device, $large-mobile} {
+        padding-right: 0px;
+    }
+    & .title {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        color: $heading-color1;
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+    }
+}
+
+// Skill Description
+.skill-descrption {
+    margin-top: 40px;
+    & .title {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+        color: $heading-color1;
+        margin-bottom: 30px;
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 30px;
+        color: #7a7a7a;
+
+        &.text {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+// Team Contact Section
+.team-contact-section {
+    padding-top: 35px;
+    padding-bottom: 90px;
+}
+
+// Team Single Contact
+.team-single-contact {
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 50px;
+    background: #f2f9fc;
+    @media #{$desktop-device}{
+        padding: 48px 48px 55px;
+    }
+    @media #{$small-mobile}{
+        padding: 30px 30px 35px;
+    } 
+    
+    & .title {
+        font-size: 24px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $heading-color1;
+        margin-bottom: 25px;
+    }
+    & .team-contact-form {
+
+        & .single-form {
+            position: relative;
+            margin-bottom: 20px;
+            & i {
+                position: absolute;
+                top: 27px;
+                left: 20px;
+                font-size: 17px;
+                color: $primary;
+                transform: translateY(-50%);
+            }
+            & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]) {
+                display: block;
+                height: 50px;
+                max-width: 100%;
+                border: none;
+                border-radius: 5px;
+                padding: 14px 20px 12px;
+                padding-left: 46px;
+                font-size: 13px;
+                color: #415674;
+                font-weight: 700;
+                line-height: 1.7;
+                text-transform: unset;
+
+                @include placeholder{
+                    opacity: 0.95;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #898c94;
+                    font-weight: 600;
+                }
+            }
+
+            & textarea {
+                height: 120px;
+                font-size: 13px;
+                color: #415674;
+                padding: 14px 20px 12px;
+                padding-left: 46px;
+                font-weight: 700;
+                line-height: 1.7;
+                text-transform: unset;
+                border: none;
+                border-radius: 5px;
+                resize: none;
+
+                @include placeholder{
+                    opacity: 0.95;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #898c94;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        & .comment-form-check {
+            margin-top: -8px;
+
+            & .form-check-input {
+                margin-top: 5px;
+                margin-right: 8px;
+                border: 2px solid $body-color;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            & .form-check-label {
+                display: inline;
+                font-size: 14px;
+                line-height: 26px;
+                color: #415674;
+                margin-bottom: 0;
+                text-transform: none;
+            }
+        }
+
+        & .contact-btn {
+
+            & .btn {
+                height: 50px;
+                line-height: 52px;
+                border-radius: 5px;
+                font-size: 14px;
+                font-family: $heading-font;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+        }
+    }
+}

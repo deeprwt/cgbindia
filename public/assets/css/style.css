@@ -1,0 +1,15 @@
+.font2 {
+    font-size: 1.5rem;
+}
+
+.font1 {
+    font-size: 1.1rem;
+}
+
+.round-cir {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}

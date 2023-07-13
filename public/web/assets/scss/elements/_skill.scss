@@ -1,0 +1,32 @@
+/*--
+/*  2.6 - Skill/Progress CSS
+/*----------------------------------------*/
+.skill {
+    & + .skill {
+        margin-top: 40px;
+    }
+    & .progress {
+        border-radius: 0;
+        background-color: $white;
+        height: 10px;
+        & .progress-bar {
+            border-radius: 0;
+            background-color: $primary;
+        }
+    }
+    & .text {
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: $heading-font;
+        line-height: 1;
+        margin-top: 7px;
+        & .value {
+            font-size: 14px;
+            margin-left: 15px;
+            color: $primary;
+            margin-top: 2px;
+        }
+    }
+}

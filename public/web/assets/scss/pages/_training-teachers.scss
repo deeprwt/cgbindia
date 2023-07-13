@@ -1,0 +1,149 @@
+/*--
+/*  10 - Training Teachers CSS
+/*----------------------------------------*/
+
+// Training Teachers Section
+.training-teachers-section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    @media #{$tablet-device}{
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile}{
+        padding-bottom: 60px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #302362;
+        opacity: 0.92;
+        z-index: -1;
+
+    }
+
+}
+
+// Training Teachers Wrapper
+.training-teachers-wrapper {
+    margin-top: 22px;
+    & .section-title {
+
+        & .title {
+            line-height: 48px;
+            padding: 0 120px;
+            color: $white;
+            @media #{$tablet-device}{
+                padding: 0 0px;
+            }
+            @media #{$large-mobile}{
+                padding: 0 0px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+// Training Teachers Item Wrapper
+.training-teachers-item-wrapper {
+    padding-top: 55px;
+    @media #{$tablet-device}{
+        padding-top: 40px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 20px;
+    }
+
+    & .features-2-item {
+        background: $white;
+        padding: 30px;
+        border-radius: 5px;
+        margin-top: 30px;
+        @media #{$small-mobile}{
+            padding: 20px;
+        }
+
+        & .features-2-content {
+            padding-right: 0;
+            @media #{$desktop-device}{
+                padding-right: 10px;
+            }
+
+            & .title {
+                font-size: 18px;
+                color: $heading-color;
+            }
+
+            & p {
+                font-size: 16px;
+                line-height: 30px;
+                color: #686F7A;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+// Training Teachers Video
+.training-teachers-video {
+    padding-top: 110px;
+    margin-bottom: -290px;
+    @media #{$tablet-device}{
+        margin-bottom: 0;
+    }
+    @media #{$large-mobile}{
+        padding-top: 70px;
+        margin-bottom: 0;
+    }
+    & .training-teachers-img {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 260px 0;
+        border-radius: 15px;
+        overflow: hidden;
+        @media #{$tablet-device, $large-mobile}{
+            padding: 150px 30px;
+        }
+    }
+
+}
+
+// Training Teachers Play
+.training-teachers-play {
+    
+    & a {
+        width: 95px;
+        height: 95px;
+        background: $primary;
+        display: inline-block;
+        line-height: 97px;
+        text-align: center;
+        font-size: 14px;
+        color: $white;
+        border-radius: 50%;
+        transition: $transition-default;
+        position: relative;
+        z-index: 5;
+        @media #{$large-mobile}{
+            width: 80px;
+            height: 80px;
+            line-height: 82px;
+            font-size: 13px;
+        }
+
+        &:hover {
+            background: $white;
+            color: $primary;
+        }
+    }
+
+}
+

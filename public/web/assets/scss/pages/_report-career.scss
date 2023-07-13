@@ -1,0 +1,216 @@
+/*--
+/*  17 - Report Career CSS
+/*----------------------------------------*/
+
+// Report Career Wrapper
+.report-career-wrapper {
+    background: #F0F4F5;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -220px;
+    position: relative;
+    z-index: 1;
+    @media #{$large-mobile}{
+        margin-top: -240px;
+    }
+}
+// Report Career Image
+.report-career-img {
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media #{$tablet-device}{
+        width: 100%;
+        padding: 250px 0 250px 0;   
+    }
+    @media #{$large-mobile}{
+        width: 100%;
+        padding: 150px 0 150px 0;   
+    }
+}
+
+// Report Career Content
+.report-career-content {
+    padding: 102px 70px 65px 70px;
+    flex: 1;
+    width: 50%;
+    @media #{$desktop-device}{
+       padding: 80px 38px 40px 38px;  
+    }
+    @media #{$tablet-device}{
+        width: 100%;  
+    }
+    @media #{$large-mobile}{
+        width: 100%; 
+        padding: 80px 30px 45px 30px;
+    }
+    @media #{$small-mobile}{
+        width: 100%; 
+        padding: 80px 22px 45px 22px;
+    }
+    & .section-title {
+
+        & .title {
+            font-size: 30px;
+            line-height: 1.4;
+            @media #{$desktop-device}{
+                font-size: 28px;  
+            }
+            @media #{$large-mobile}{
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+
+        &.section-devider {
+
+            &::before {
+                margin: 0;
+                top: -23px;
+            }
+        }
+
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #686f7a;
+        padding-top: 25px;
+    }
+
+    & ul {
+        margin-top: 20px;
+        @media #{$large-mobile}{
+            margin-top: 15px;   
+        }
+        & li {
+            display: flex;
+            align-items: flex-start;
+            font-size: 16px;
+            font-weight: 400;
+            color: #686f7a;
+            line-height: 38px;
+            @media #{$small-mobile}{
+                font-size: 15px;   
+            }
+
+            & i {
+                font-size: 14px;
+                color: $heading-color;
+                margin-right: 10px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+
+
+// Home Style Three
+
+// Report Career-2 Image Wrapper
+.report-career-2-img-wrapper {
+    display: flex;
+    align-items: center;
+    @media #{$large-mobile}{
+        display: block; 
+        text-align: center;  
+    }
+    & .report-career-2-img-sm {
+        padding-right: 10px;
+
+        & img {
+
+            @media #{$large-mobile}{
+                width: 100%;  
+            }
+        }
+        @media #{$large-mobile}{
+            padding-right: 0px;   
+        }
+        & .img-1 {
+            margin-bottom: 20px;
+        }
+
+        & .img-2 {
+            text-align: right;
+            @media #{$large-mobile}{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            & img {
+                max-width: 50%;
+                @media #{$large-mobile}{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    & .report-career-2-img-big {
+        padding-left: 10px;
+
+        & img {
+            @media #{$large-mobile}{
+                width: 100%;
+            }
+        }
+        @media #{$large-mobile}{
+            padding-left: 0;
+        }
+    }
+}
+
+// Report Career-2 Content
+.report-career-2-content {
+    padding: 0;
+    padding-left: 55px;
+    width: 100%;
+    @media #{$desktop-device}{
+        padding-left: 30px;
+        padding-top: 35px;
+    }
+    @media #{$tablet-device}{
+        margin-top: 65px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+    @media #{$large-mobile}{
+        margin-top: 85px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+}
+
+// Report Career-3
+.report-career-3-wrapper {
+
+    & .report-career-item {
+        display: flex;
+        margin-top: 40px;
+        & .report-career-icon {
+            padding-right: 30px;
+        }
+
+        & .report-career-text {
+            flex: 1;
+
+            & .title {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 700;
+                color: $heading-color;
+            }
+
+            & p {
+                padding-top: 0;
+                font-size: 16px;
+                line-height: 30px;
+                color: #7a7a7a;
+            }
+        }
+    }
+}

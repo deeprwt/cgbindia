@@ -1,0 +1,128 @@
+/*--
+/*  21 - Learning Effect CSS
+/*----------------------------------------*/
+
+// Learning Effect Section
+.learning-effect-section {
+    padding-top: 210px;
+    padding-bottom: 135px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    @media #{$tablet-device}{
+        padding-top: 180px;
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 160px;
+        padding-bottom: 60px;
+    }
+
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: #313842;
+        opacity: 0.9;
+        z-index: -1;
+    }
+
+}
+// Learning Effect Image
+.learning-effect-img {
+    padding: 140px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+// Learning Effect Content
+.learning-effect-content {
+    padding-left: 45px;
+    padding-right: 30px;
+    margin-top: 22px;
+    @media #{$desktop-device}{
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    @media #{$tablet-device}{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    @media #{$large-mobile}{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 90px;
+    }
+    & .section-title {
+
+        & .title {
+            color: $white;
+            font-size: 30px;
+            line-height: 46px;
+            @media #{$large-mobile}{
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+
+    & p {
+        color: $white;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    & .section-devider {
+        
+        &::before {
+            margin: 0;
+        }
+    }
+}
+
+.learning-effect {
+
+    & a {
+        width: 80px;
+        height: 80px;
+        background: $primary;
+        display: inline-block;
+        line-height: 84px;
+        text-align: center;
+        font-size: 14px;
+        color: $white;
+        border-radius: 50%;
+        transition: $transition-default;
+        position: relative;
+        z-index: 5;
+        
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            animation: pulse 1500ms ease-out infinite;
+        }
+
+        &:hover {
+            background: $white;
+            color: $primary;
+        }
+    }
+}

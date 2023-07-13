@@ -1,0 +1,193 @@
+/*--
+/*  24 - Contact CSS
+/*----------------------------------------*/
+
+.contact-form-wrapper {
+    margin-top: -50px;
+}
+// Contact Map
+.contact-map {
+    padding-right: 30px;
+    margin-top: 50px;
+    @media #{$tablet-device, $large-mobile}{
+        padding-right: 0px;
+    }
+
+    & iframe {
+        height: 530px;
+        width: 100%;
+        filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    }
+}
+
+// Contact Form
+.contact-form {
+    background: #F8FAFF;
+    padding: 45px;
+    height: 530px;
+    margin-top: 50px;
+
+    & .title {
+        font-size: 30px;
+        line-height: 40px;
+        color: #1b2336;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    & .single-form {
+        margin-top: 15px;
+
+        & input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+        textarea {
+            background: #f0f0f0;
+            border: 0;
+            padding-left: 15px;
+        }
+
+        & textarea {
+            height: 90px;
+        }
+    }
+
+    & .contact-btn {
+        margin-top: 30px;
+
+        & .btn {
+            font-size: 14px;
+            font-family: $heading-font;
+            font-weight: 700;
+            line-height: 52px;
+            height: 50px;
+            padding: 0 26px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+// Contact Info Wrapper
+.contact-info-wrapper {
+    margin-top: -23px;
+
+    & .contact-info-title {
+        max-width: 490px;
+        margin: 0 auto;
+
+        & .title {
+            font-size: 30px;
+            line-height: 42px;
+            font-weight: 700;
+            color: $heading-color;
+            @media #{$large-mobile}{
+                font-size: 28px;
+                line-height: 36px;
+            }
+            @media #{$small-mobile}{
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+// Contact Info Item Wrapper
+.contact-info-item-wrapper {
+    padding-top: 20px;
+}
+// Contact Info Item
+.contact-info-item {
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+    @media #{$desktop-device}{
+        padding: 30px;
+    }
+    @media #{$large-mobile}{
+        padding: 30px;
+    }
+    
+    &.contact-info-1 {
+        margin-right: 5px;
+        background: #E5F8F6;
+        @media #{$tablet-device, $large-mobile}{
+            margin-right: 0;
+        }
+
+        & .contact-info-icon {
+            background: #01BCA7;
+            color: $white;
+        }
+    }
+    &.contact-info-2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        background: #FFF0EA;
+        @media #{$tablet-device, $large-mobile}{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        & .contact-info-icon {
+            background: #FF6D34;
+            color: $white;
+        }
+    }
+    &.contact-info-3 {
+        margin-left: 5px;
+        background: #F3FAF2;
+        @media #{$tablet-device, $large-mobile}{
+            margin-left: 0px;
+        }
+
+        & .contact-info-icon {
+            background: #8DD17E;
+            color: $white;
+        }
+    }
+
+    & .contact-info-icon {
+        width: 75px;
+        height: 75px;
+        line-height: 78px;
+        font-size: 35px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        transition: $transition-default;
+        @media #{$large-mobile}{
+            width: 65px;
+            height: 65px;
+            line-height: 72px;
+            font-size: 28px;
+        }
+
+        &:hover {
+            color: #818a91;
+        }
+    }
+
+    & .contact-info-text {
+        max-width: 235px;
+        margin: 0 auto;
+
+        & .title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+            color: $heading-color;
+            margin-bottom: 20px;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #7a7a7a;
+        }
+    }
+}
+
+
+
+

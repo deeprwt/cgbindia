@@ -1,0 +1,124 @@
+/*--
+/*  18 - Certificate CSS
+/*----------------------------------------*/
+
+// Certificate Wrapper
+.certificate-wrapper {
+    margin-top: 22px;
+
+    .certificate-col {
+        border-right: 1px dashed #03030321;
+        @media #{$large-mobile}{
+            border-right: 0;
+        }
+    
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+// Certificate Content Wrapper
+.certificate-content-wrapper {
+    padding-top: 55px;
+    @media #{$tablet-device, $large-mobile}{
+        padding-top: 20px;
+    }
+}
+
+// Certificate IItem
+.certificate-item {
+    padding: 0 46px;
+    margin-top: 30px;
+    @media #{$tablet-device}{
+        padding: 0 25px;
+    }
+    @media #{$small-mobile}{
+        padding: 0 35px;
+    }
+    & .certificate-img {
+
+    }
+
+    & .certificate-content {
+
+        & .title {
+            color: $heading-color;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            margin-top: 30px;
+        }
+
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: #686f7a;
+            margin-top: 10px;
+        }
+    }
+}
+
+// Home Style Five
+
+// Certificate-2 Section
+.certificate-2-section {
+    
+}
+
+// Certificate-2 Wrapper
+.certificate-2-wrapper {
+    background: #FCF9F0;
+    padding: 50px 0px 80px 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media #{$desktop-device, $tablet-device}{
+        padding: 50px;  
+    }
+    @media #{$large-mobile}{
+        padding: 50px 20px 50px 20px;  
+    }
+    & .access-course-img {
+        text-align: center;
+        padding-left: 0;
+        @media #{$desktop-device, $tablet-device, $large-mobile}{
+            margin-bottom: 40px;
+        }
+        & img {
+            width: 65%;
+        }
+    }
+
+    & .access-course-content {
+        padding: 30px 120px 0px 0px;
+        @media #{$laptop-device}{
+            padding: 30px 80px 0px 0px;
+        }
+        @media #{$desktop-device, $tablet-device}{
+            padding: 30px 0px 0px 0px;
+        }
+        @media #{$large-mobile}{
+            padding: 0;   
+        }
+        & .title {
+            margin-top: 0;
+            @media #{$large-mobile}{
+                font-size: 28px;
+                margin-top: 20px;   
+            }
+        }
+
+        & p {
+            font-size: 20px;
+            line-height: 37.5px;
+            color: #686f7a;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        & .btn {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}

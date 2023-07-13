@@ -1,0 +1,31 @@
+/*--
+/*  2.2 - Blockquote CSS
+/*----------------------------------------*/
+
+// blockquote {
+//     background-color: lighten($primary, 36);
+//     padding: 20px 30px;
+//     &::before {
+//         content: '\f10d';
+//         font-family: $fontawesome;
+//         font-size: 36px;
+//         line-height: 1;
+//         margin-right: 5px;
+//         position: relative;
+//         bottom: -3px;
+//         color: $primary;
+//     }
+// 	&:not(:first-child) {
+// 		margin-top: 25px;
+// 	}
+// 	&:not(:last-child) {
+// 		margin-bottom: 25px;
+// 	}
+//     & p {
+//         display: inline;
+//         font-size: 20px;
+//         color: $heading-color;
+//         line-height: 33px;
+//         font-weight: 600;
+//     }
+// }

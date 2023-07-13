@@ -1,0 +1,97 @@
+/*--
+/*  16 - Quality Education CSS
+/*----------------------------------------*/
+
+// Quality Education
+.quality-education-section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 110px;
+    padding-bottom: 240px;
+    position: relative;
+    z-index: 1;
+    @media #{$tablet-device}{
+        padding-top: 100px;
+        padding-bottom: 220px;  
+    }
+    @media #{$large-mobile}{
+        padding-top: 60px;
+        padding-bottom: 220px;  
+    }
+
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: #313842;
+        opacity: 0.89;
+        z-index: -1;
+    }
+}
+
+// Quality Education Wrapper
+.quality-education-wrapper {
+    padding-bottom: 90px;
+    & .quality-education-title {
+        
+        & .title {
+            color: $white;
+        }
+    }
+
+    & .quality-education-content {
+        
+        & p {
+            font-size: 16px;
+            line-height: 30px;
+            color: $white;
+            margin-top: 20px;
+        }
+
+        & .quality-education-play {
+
+            & a {
+                width: 95px;
+                height: 95px;
+                background: $primary;
+                display: inline-block;
+                line-height: 97px;
+                text-align: center;
+                font-size: 14px;
+                color: $white;
+                border-radius: 50%;
+                margin-top: 40px;
+                transition: $transition-default;
+                position: relative;
+                z-index: 5;
+                @media #{$large-mobile}{
+                    width: 80px;
+                    height: 80px;
+                    line-height: 82px;
+                    font-size: 13px;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    top: 50%;
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    background: $white;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+

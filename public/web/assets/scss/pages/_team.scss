@@ -1,0 +1,225 @@
+/*--
+/*  20. - Team CSS
+/*----------------------------------------*/
+
+// Team Section
+.team-section {
+    background: #F0F4F5;
+}
+// Team Wrapper
+.team-wrapper {
+
+    & .section-title {
+        margin-top: 22px;
+        @media #{$tablet-device, $large-mobile}{
+            text-align: center;
+        }
+    }
+
+    & .section-devider {
+
+        &::before {
+            margin: 0;
+            @media #{$tablet-device, $large-mobile}{
+                margin: 0 auto;
+            }
+        }
+    }
+
+    & .team-text {
+        @media #{$tablet-device}{
+            text-align: center;
+            padding: 0 50px;
+            margin-top: 25px;
+        }
+        @media #{$large-mobile}{
+            text-align: center;
+            padding: 0 0;
+            margin-top: 25px;
+        }
+        & p {
+            font-size: 17px;
+            line-break: 30px;
+            color: #686F7A;
+        }
+    }
+}
+
+// Team Item Wrapper
+.team-item-wrapper {
+    padding-top: 45px;
+    margin-bottom: -90px;
+    z-index: 5;
+    position: relative;
+    @media #{$large-mobile}{
+        padding-top: 25px;
+    }
+}
+
+// Single Team
+.single-team {
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:hover {
+
+        & .team-img {
+
+            & .team-social {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &.team-color-2 {
+
+        & .team-img {
+
+            & .team-social {
+
+                & ul {
+    
+                    & li {
+                        
+                        & a {
+                            background: #8dd17e;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        & .team-content {
+            border-bottom: 5px solid #8dd17e;
+
+            & .team-share {
+
+                & span {
+                    background: #8dd17e;
+                }
+                
+            }
+        }
+    }
+
+    &.team-color-3 {
+
+        & .team-img {
+
+            & .team-social {
+
+                & ul {
+    
+                    & li {
+                        
+                        & a {
+                            background: #ffbc51;
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        & .team-content {
+            border-bottom: 5px solid #ffbc51;
+
+            & .team-share {
+
+                & span {
+                    background: #ffbc51;
+                }
+                
+            }
+        }
+    }
+
+    & .team-img {
+        position: relative;
+
+        & a {
+            display: block;
+            & img {
+                width: 100%;
+            }
+        }
+        & .team-social {
+            position: absolute;
+            bottom: -15px;
+            transition: 0.35s;
+            right: 25px;
+            transform: translateY(-15px);
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition-default;
+            & ul {
+
+                & li {
+                    margin-top: 10px;
+                    & a {
+                        font-size: 14px;
+                        border-radius: 100px;
+                        color: $white;
+                        background: #ff6d34;
+                        display: block;
+                        height: 40px;
+                        width: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+    }
+
+    & .team-content {
+        background: #f9f9f9;
+        padding: 20px 25px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 5px solid #ff6d34;
+
+        & .team-name-deg {
+
+            & .name {
+
+                & a {
+                   font-size: 18px;
+                   line-height: 20px;
+                   font-weight: 700;
+                   color: $heading-color; 
+                }
+            }
+        }
+        
+        & .team-share {
+
+            & span {
+                font-size: 14px;
+                border-radius: 100px;
+                color: #fff;
+                background: #ff6d34;
+                display: block;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
+// Our Team wrap
+.our-team-wrap {
+    margin-top: -30px;
+}
+
+
+

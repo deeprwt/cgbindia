@@ -1,0 +1,160 @@
+/*--
+/*  25 - About CSS
+/*----------------------------------------*/
+
+// About Wrapper
+.about-wrapper {
+    margin-top: -40px;
+}
+
+// About Content
+.about-content {
+    padding-right: 55px;
+    padding-top: 18px;
+    margin-top: 40px;
+    @media #{$desktop-device} {
+        padding-right: 40px;
+    }
+    @media #{$tablet-device, $large-mobile} {
+        padding-right: 0px;
+    }
+    & .section-title {
+
+        & .title {
+            font-size: 30px;
+            line-height: 42px;
+            font-weight: 700;
+            padding-right: 10px;
+            color: $heading-color;
+        }
+
+        &.section-devider {
+            
+            &::before {
+                margin: 0;
+            }
+        }
+
+    }
+
+    & p {
+        margin-top: 20px;
+        padding-right: 30px;
+    }
+
+}
+
+// About Image
+.about-img {
+    margin-top: 40px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+// Counter Bar
+.counter-bar {
+    padding-top: 10px;
+
+    & .skill-item {
+        margin-top: 10px;
+
+        & .title {
+            font-size: 16px;
+            line-height: 37px;
+            color: $heading-color;
+            font-weight: 600;
+        }
+
+        & .skill-bar {
+
+            & .bar-inner {
+                width: 100%;
+                height: 15px;
+                border-radius: 2px;
+                background-color: #d9d9d9;
+                position: relative;
+                overflow: hidden;
+    
+                & .progress-line {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 15px;
+                    border-radius: 2px;
+                    transition: 3s;
+                    transition-delay: 1s;
+                    width: 0;
+
+                    &.color-1 {
+                        background: #01BCA7;
+                    }
+                    &.color-2 {
+                        background: #FCCB54;
+                    }
+                    &.color-3 {
+                        background: #8DD17E;
+                    }
+    
+                    & .skill-percent {
+                        position: absolute;
+                        top: -1px;
+                        right: 15px;
+                        font-size: 11px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+// About Testimonial
+
+.about-testimonial-title {
+
+    & .title {
+        padding-bottom: 60px;
+        @media #{$tablet-device}{
+            padding-bottom: 50px;
+        }
+        @media #{$large-mobile}{
+            padding-bottom: 40px;
+        }
+    }
+}
+
+// About Team
+.about-team-wrap {
+    padding-top: 50px;
+    @media #{$desktop-device, $tablet-device}{
+        padding-top: 40px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 30px;
+    }
+}
+
+// About Brand
+.about-brand-section {
+    padding-top: 70px;
+    padding-bottom: 120px;
+    @media #{$desktop-device}{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    @media #{$tablet-device}{
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile}{
+        padding-top: 10px;
+        padding-bottom: 60px;
+    }
+}
+
+
+

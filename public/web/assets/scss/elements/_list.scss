@@ -1,0 +1,37 @@
+/*--
+/*  2.5 - List CSS
+/*----------------------------------------*/
+.list-bullet {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    & li {
+        line-height: 2;
+        &::before {
+            content: "\f111";
+            font-size: 8px;
+            font-family: $fontawesome;
+            color: $primary;
+            margin-right: 10px;
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+.list-check-square-o {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    & li {
+        line-height: 2;
+        &::before {
+            content: "\f046";
+            //font-size: 8px;
+            font-family: $fontawesome;
+            color: $primary;
+            margin-right: 10px;
+            position: relative;
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+/*--
+/*  07 - Global Learner CSS
+/*----------------------------------------*/
+
+// Global Learner Wrapper
+.global-learner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// Global Learner Content
+.global-learner-content {
+    text-align: right;
+    padding-right: 50px;
+    width: 50%;
+    @media #{$desktop-device, $tablet-device}{
+        padding-right: 30px;
+    }
+    @media #{$large-mobile}{
+        width: 100%;
+        text-align: left;
+    }
+
+    & .title {
+        color: $heading-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.28;
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+    }
+}
+
+// Learner Courses Content
+.learner-courses-content {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    @media #{$large-mobile}{
+        width: 100%;
+        justify-content: start;
+        margin-top: 30px;
+    }
+    & .single-item {
+
+        & .number {
+            color: #FF1F59;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1;
+            @media #{$large-mobile}{
+                font-size: 28px;
+            }
+        }
+
+        &.learner {
+            padding: 24px 50px 0px 0px;
+            border-right: 1px solid #ddd;
+            text-align: right;
+            @media #{$desktop-device, $tablet-device}{
+                padding: 24px 40px 0px 0px;
+            }
+            @media #{$large-mobile}{
+                padding: 20px 40px 0px 0px;
+            }
+        }
+        &.courses {
+            padding: 24px 0px 0px 50px;
+            @media #{$desktop-device, $tablet-device}{
+                padding: 24px 0px 0px 40px;
+            }
+            @media #{$large-mobile}{
+                padding: 20px 0px 0px 40px;
+            }
+        }
+
+        & span {
+            font-size: 16px;
+            color: $heading-color;
+        }
+    }
+}
+
+

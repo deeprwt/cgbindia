@@ -1,0 +1,130 @@
+/*--
+/*  2.1 - Accordion CSS
+/*----------------------------------------*/
+
+// Accordion One
+.accordion {
+    & .card {
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #eeeeee;
+        & .card-header {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            & [data-toggle="collapse"] {
+                display: block;
+                padding: 15px 0;
+                border: none;
+                background-color: transparent;
+                margin: 0;
+                font-size: 24px;
+				line-height: 1.25;
+                font-family: $heading-font;
+                color: $heading-color;
+                &::after {
+					display: inline-block;
+                    font-size: 90%;
+                    content: "\f107";
+                    font-family: $fontawesome;
+                    margin-left: 15px;
+                    color: $primary;
+					transform: rotateX(-190deg);
+					transition: $transition-default;
+                }
+				&.collapsed {
+					&::after {
+						transform: rotateX(0deg);
+					}
+				}
+            }
+        }
+        & .collapse, .collapsing {
+            margin: 0;
+            & .card-body {
+                padding: 0 0 20px;
+				max-width: 650px;
+            }
+        }
+    }
+	&.text-center {
+		& .card {
+			& .card-header {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			& .collapse, .collapsing {
+				& .card-body {
+					padding: 0 15px 20px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	}
+}
+// Accordion Two
+.accordion-2 {
+    & .card {
+        border: none;
+        border-radius: 0;
+		background-color: #f8f7f7;
+		& + .card {
+			margin-top: 15px;
+		}
+        & .card-header {
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            & [data-toggle="collapse"] {
+                display: block;
+                padding: 20px 60px 20px 30px;
+                border: none;
+                margin: 0;
+                font-size: 14px;
+				line-height: 1.25;
+				font-weight: 700;
+				text-transform: uppercase;
+                font-family: $body-font;
+                background-color: $primary;
+                color: $white;
+                &::after {
+					display: block;
+                    content: "-";
+                    position: absolute;
+					right: 22px;
+					top: 22px;
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					line-height: 17px;
+					font-weight: 400;
+					text-align: center;
+					font-family: $body-font;
+					background-color: $white;
+					color: $primary;
+					padding-left: 3px;
+                }
+				&.collapsed {
+					background-color: #f8f7f7;
+					color: $heading-color;
+					&::after {
+						content: "+";
+						background-color: $primary;
+						color: $white;
+						padding-left: 1px;
+					}
+				}
+            }
+        }
+        & .collapse, .collapsing {
+            margin: 0;
+            & .card-body {
+                padding: 25px 30px;
+				max-width: 650px;
+				margin-left: auto;
+				margin-right: auto;
+            }
+        }
+    }
+}

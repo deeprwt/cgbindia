@@ -1,0 +1,90 @@
+/*--
+/*  06 - Expert Track CSS
+/*----------------------------------------*/
+
+// Expert Track Section
+.expert-track-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    padding-top: 100px;
+    padding-bottom: 170px;
+    position: relative;
+    z-index: 1;
+    @media #{$desktop-device}{
+       padding-top: 30px;
+       padding-bottom: 100px;
+    }
+    @media #{$tablet-device, $large-mobile}{
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, #00000000 0%, #000000 100%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.43;
+        z-index: -1;
+    }
+}
+
+
+// Expert Track Wrapper
+.expert-track-wrapper {}
+
+// Expert Track Content
+.expert-track-content {
+    padding-right: 100px;
+    margin-top: 70px;
+    @media #{$large-mobile}{
+        padding-right: 0;
+    }
+
+    & .sub-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        line-height: 1;
+    }
+
+    & .title {
+        font-size: 36px;
+        font-weight: 700;
+        color: $white;
+        line-height: 1.3;
+        padding-top: 20px;
+        @media #{$large-mobile}{
+            font-size: 28px;
+        }
+    }
+
+    & .btn {
+        margin-top: 20px;
+    }
+}
+
+// Sign Up Content
+.sign-up-content {
+    padding-right: 0;
+    padding-left: 90px;
+    @media #{$desktop-device, $tablet-device}{
+        padding-left: 0;
+        padding-right: 70px;
+    }
+    @media #{$large-mobile}{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+
