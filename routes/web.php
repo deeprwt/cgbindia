@@ -48,43 +48,8 @@ Route::get('why-isfo',function(){
 Route::get('our-partner',function(){
     return view('web.partner');
 });
-Route::get('science',function(){
-    return view('web.olympaid.science');
-});
-Route::get('gk',function(){
-    return view('web.olympaid.gk');
-});
-Route::get('english',function(){
-    return view('web.olympaid.english');
-});
-Route::get('math',function(){
-    return view('web.olympaid.math');
-});
-
-Route::get('sample-paper/science',function(){
-    return view('web.olympaid.sp.science');
-});
-Route::get('sample-paper/gk',function(){
-    return view('web.olympaid.sp.gk');
-});
-Route::get('sample-paper/english',function(){
-    return view('web.olympaid.sp.english');
-});
-Route::get('sample-paper/math',function(){
-    return view('web.olympaid.sp.math');
-});
-
-Route::get('scheme/science',function(){
-    return view('web.olympaid.scheme.science');
-});
-Route::get('scheme/gk',function(){
-    return view('web.olympaid.scheme.gk');
-});
-Route::get('scheme/english',function(){
-    return view('web.olympaid.scheme.english');
-});
-Route::get('scheme/math',function(){
-    return view('web.olympaid.scheme.math');
+Route::get('people-solutions',function(){
+    return view('web.people-solutions');
 });
 
 // -------------------------------------------------- cgb website new pages created solutions -------------------------------------------------
@@ -98,10 +63,18 @@ Route::get('solutions/automation',function(){
 Route::get('solutions/oracle',function(){
     return view('web.solutions.oracle');
 });
-Route::get('solutions/automation',function(){
-    return view('web.solutions.automation');
+Route::get('solutions/servicenow',function(){
+    return view('web.solutions.servicenow');
 });
-
+Route::get('permanent-staffing',function(){
+    return view('web.permanent-staffing');
+});
+Route::get('contract-manpower',function(){
+    return view('web.contract-manpower');
+});
+Route::get('hire-train-deploy',function(){
+    return view('web.hire-train-deploy');
+});
 // -------------------------------------------------- cgb website new pages created solutions end -------------------------------------------------
 
 Route::get('faq',function(){

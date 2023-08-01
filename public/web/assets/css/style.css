@@ -276,9 +276,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .section-title .title span {
   position: relative;
   z-index: 1;
+  color:#f9a526;
+  font-weight: 900;
 }
 
-.section-title .title span::before {
+/* .section-title .title span::before {
   position: absolute;
   content: '';
   width: 103%;
@@ -288,7 +290,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   z-index: -1;
   top: 12px;
   left: -5px;
-}
+} */
 
 @media only screen and (max-width: 575px) {
   .section-title .title span::before {
@@ -3453,7 +3455,7 @@ select {
 .hero-section-2 {
   padding-top: 120px;
   padding-bottom: 130px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -3578,7 +3580,7 @@ select {
 
 .hero-section-3 {
   padding: 110px 0px 300px 0px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -3696,7 +3698,7 @@ select {
 
 .hero-section-4 {
   padding-top: 110px;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -7221,7 +7223,7 @@ select {
   color: #f9a526;
   /* line-height: 38px; */
   font-size: 2rem;
-  font-family: cursive;
+  /* font-family: cursive; */
  /* margin-top: 10px; */
 }
 
@@ -7503,7 +7505,7 @@ select {
 
 @media only screen and (max-width: 767px) {
   .report-career-content .section-title .title {
-    font-size: 26px;
+    font-size: 28px;
     line-height: 36px;
   }
 }
@@ -8365,7 +8367,7 @@ select {
 }
 
 .page-banner .title {
-  font-size: 40px;
+  font-size: 50px;
   line-height: 1.25;
   font-weight: 700;
 }
@@ -8411,7 +8413,7 @@ select {
   font-weight: 400;
   margin-top: 3px;
   padding-right: 8px;
-  color: #29303B;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
@@ -12480,7 +12482,7 @@ select {
   filter: drop-shadow(0px 7px 29px rgba(100, 100, 111, 0.2));
 }
 
-.shadow_img:hover{
+.shadow_img a img:hover{
   transform: translateY(-5px) translate3d(0, -5px, 0);
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 25px;
@@ -12488,6 +12490,7 @@ select {
 
 .shadow_hov{
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 
 .shadow_hov:hover{
@@ -12497,7 +12500,7 @@ select {
 .img_set{
   aspect-ratio: 3/2;
     object-fit: contain;
-    padding: 12px;
+    padding: 36px;
 }
 
 .img_blur{
@@ -12505,7 +12508,7 @@ select {
 }
 
 .renvoation_col_bg{
-  background-image: url(../images/bg/interior.jpg);
+  background-image: url(../images/bg/renovation.jpg);
 }
 
 .logo_col_bg{
@@ -12523,6 +12526,207 @@ select {
   border-radius: 15px;
 }
 
-.cursive{
-  font-family: cursive;
+
+.header_background{
+  background-image: url(../images/cgb_images/banner1.jpg);
+  padding-top:120px !important;
+}
+
+.about_background{
+  background-image: url(../images/bg/bg12.jpg);
+}
+
+.cover_bg{
+  /* padding-top: 110px; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.cover_bg:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: black;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.employees_bg{
+  background-image: url(../images/bg/team_bg.png);
+}
+
+.main_div{
+  -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+}
+
+.sub_div{
+  -webkit-transform: skewY(3deg);
+    transform: skewY(3deg);
+}
+
+.color_code{
+  color: #f9a526;
+}
+
+.shadows{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sindhu_img{
+  height: 350px;
+}
+
+.profile_p{
+  padding: 40px 45px 20px 45px !important; 
+  backdrop-filter: blur(4px);
+}
+
+.linkdin{
+  background-color: #0a66c2;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.gmail{
+  background-color: #CA3737;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.bg_none{
+  background: none !important;
+  border: none !important;
+}
+
+.overview_col_bg{
+  background-image: url(../images/bg/world.jpg);
+}
+
+.ps_col_bg{
+  background-image: url(../images/bg/ps.png);
+}
+
+.cm_col_bg{
+  background-image: url(../images/bg/bg_cm.png);
+}
+
+.about_col_bg{
+  background-image: url(../images/bg/main.png);
+}
+
+@media only screen and (min-width: 767px) {
+  .cursive{
+    font-family: cursive;
+  }
+}
+
+.space_head_bg{
+  background-color: #fbae18;
+}
+
+.btn_nav_cls{
+  outline: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1b2336;
+    border: none;
+}
+
+.new_p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #686f7a;
+  padding-top: 25px;
+}
+
+.disc{
+  list-style: disc;
+}
+
+.head_icon{
+  background: #ffffff33;
+  backdrop-filter: blur(4px);
+  padding: 0px 40px 0px 40px;
+  /* background: rgba(255, 255, 255, 0.1); */
+  border-radius: 15px;
+}
+
+.li_heading{
+  font-size: 22px;
+    line-height: 1.82;
+    font-weight: 700;
+    margin-top: 22px;
+}
+
+.blur{
+  backdrop-filter: blur(4px);
+}
+
+.back_outsystems{
+  background-image: url(../images/bg/back_outsystems.png);
+  padding-top: 110px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.back_servicenow{
+  background-image: url(../images/bg/back_servicenow.png);
+  padding-top: 110px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.disc li{
+  text-align: justify;
+}
+
+.custom_bg_1{
+  background: #01273a;
+}
+
+.hero-section-updated::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.hero-section-updated {
+  padding-top: 110px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.img_wh_set{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.only_top{
+  padding-top: 110px;;
 }

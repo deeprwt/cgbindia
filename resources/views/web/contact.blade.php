@@ -1,7 +1,7 @@
 @extends('web.layout.template')
 @section('main')
             <!-- Page Banner Start -->
-            <div class="section page-banner-section py-5" style="background-image: url({{ url('web/assets/images/bg/brd.jpg') }});">
+            <div class="section page-banner-section py-5 header_background hero-section-4">
                 <div class="container">
                     <!-- Page Banner Wrapper Start -->
                     <div class="page-banner-wrapper">
@@ -9,10 +9,10 @@
                             <div class="col-lg-12">
                                 <!-- Page Banner Content Start -->
                                 <div class="page-banner text-center">
-                                    <h2 class="title ">Contact Us</h2>
+                                    <h2 class="title text-white">Contact Us</h2>
                                     <ul class="breadcrumb justify-content-center">
-                                        <li class="breadcrumb-item"><a href="{{ url('/') }}" class="">Home</a></li>
-                                        <li class="breadcrumb-item active " aria-current="page">Contact us</li>
+                                        <li class="breadcrumb-item text-white"><a href="{{ url('/') }}" class="">Home</a></li>
+                                        <li class="breadcrumb-item active text-white" aria-current="page">Contact us</li>
                                     </ul>
                                 </div>
                                 <!-- Page Banner Content End -->
@@ -65,13 +65,13 @@
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
-                                        <div class="col-sm-12">
-                                            <!-- Single Form Start -->
+                                        <!-- <div class="col-sm-12">
+
                                             <div class="single-form">
                                                 <input type="text" name="school" placeholder="School Name">
                                             </div>
-                                            <!-- Single Form End -->
-                                        </div>
+
+                                        </div> -->
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="contact-btn" id="submitButton">
@@ -100,14 +100,14 @@
                                                       </ul>-->
                               <ul class="contacts" style="margin-top:15px; font-weight:bold;">
                                 <li class="fa fa-home"></li>
-                                International Society for Olympiad<br />
-                                193, Ganpati Enclave, Jharsa Road <br />
-                                Gurgaon (HR) - 122001, India<br>
+                                No.1/1, 1 st Floor, 21 st Cross,<br /> 
+                                CMH Road,Lakshmipuram, Ulsoor,<br />
+                                 Bangalore – 560008 <br>
                                 <!--<li class="fa fa-mobile"></li>  7042292974 [10 A.M. to 6 P.M.] |  <i class="fa fa-phone"></i> 0124-4386346 <br>-->
                                 <!--<li class="fa fa-mobile"></li> 9910336673, 7042292974 |-->
-                                 <i class="fa fa-phone"></i> 01161400200 | Mon - Fri (10 am to 6 pm) <!--011-61400200--> <!--+91-9899999241, +91-8630069975<br> Mon-Fri [10 A.M. to 6 P.M.]--><br>
+                                 <i class="fa fa-phone"></i> 01161400200 <!--011-61400200--> <!--+91-9899999241, +91-8630069975<br> Mon-Fri [10 A.M. to 6 P.M.]--><br>
                                 <li class="fa fa-envelope"></li>
-                                <a href="mailto:support@isfo.in ">support@isfo.in </a>
+                                <a href="mailto:support@isfo.in ">info@cgbindia.com</a>
                               </ul>
                               <hr>
                              </div>

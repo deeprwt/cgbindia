@@ -78,17 +78,15 @@
                                         <li><a href="{{ url('why-isfo') }}">Why ISFO </a></li>
                                     </ul> -->
                                 </li>
-                                <li><a href="#">People</a></li>                               
-                                <li><a href="{{ url('faq') }}">Tech</a></li>
-                                <li><a href="#">Build</a></li>                                                                
+                                <li><a href="{{ url('/#people') }}">People</a></li>                               
+                                <li><a href="{{ url('/#tech') }}">Tech</a></li>
+                                <li><a href="{{ url('/#build') }}">Build</a></li>                                                                
                             </ul>
                         </div>
                         <!-- Header Menu End -->
 
                         <!-- Header Meta Start -->
                         <div class="header-meta">
-
-                           
                             <div class="header-login-join d-none d-lg-block">
                               
                                 <a class="btn join-btn" href="{{ url('contact') }}">Contact Us</a>
@@ -133,7 +131,9 @@
                 <div class="offcanvas-menu">
                     <ul class="main-menu">
                         <li><a href="{{ url('/') }}">Home</a></li>                                
-                        <li><a href="#">People</a>
+                        <li><a href="{{ url('/#people') }}">
+                        <button class="btn_nav_cls" data-bs-dismiss="offcanvas">People</button>
+                        </a>
                             <!-- <ul class="sub-menu">
                                 <li><a href="{{ url('about-isfo') }}">About ISFO</a></li>
                                 <li><a href="{{ url('advisory-council') }}">Advisory Panel </a></li>
@@ -141,8 +141,8 @@
                                 <li><a href="{{ url('why-isfo') }}">Why ISFO </a></li>
                             </ul> -->
                         </li>
-                        <li><a href="#">Tech</a></li>                       
-                        <li><a href="{{ url('faq') }}">Build</a></li>                      
+                        <li><a href="{{ url('/#tech') }}"><button class="btn_nav_cls" data-bs-dismiss="offcanvas">Tech</button></a></li>                       
+                        <li><a href="{{ url('/#build') }}"><button class="btn_nav_cls" data-bs-dismiss="offcanvas">Build</button></a></li>                      
                         <a class="btn join-btn" href="{{ url('contact') }}">Contact Us</a>
                     </ul>
                 </div>
@@ -160,7 +160,7 @@
         <!-- Call to Action End -->
         <!-- Footer Start -->
      
-        <div class="footer-section section hero-section-4" style="background-image: url(web/assets/images/cgb_images/banner2.jpg);">
+        <div class="footer-section section hero-section-4 header_background">
             <div class="container">
                     <div class="row">
                         <div class="col-md-3 ">
@@ -196,18 +196,18 @@
                         <div class="col-md-3 p-2">
                             <h4 class="text-white">Services</h4>
                             <hr>
-  <ul class="text-white">
-    <li>
-    <a  class="hvr-float-shadow" href="#" target="_blank">IT Staffing </a>
-</li>
-   <li>
-    <a  class="hvr-float-shadow" href="#" target="_blank">Non IT Staffing</a>
-    
-</li>
-   <li><a href="#" target="_blank" class="hvr-float-shadow" >Office and Home Automation</a></li>
-   <li><a href="#" class="hvr-float-shadow" >General Staffing</a></li>
-   <li><a href="#" class="hvr-float-shadow" >Turnkey Design</a></li>
-</ul>
+                                <ul class="text-white">
+                                    <li>
+                                    <a  class="hvr-float-shadow" href="#" target="_blank">IT Staffing </a>
+                                </li>
+                                <li>
+                                    <a  class="hvr-float-shadow" href="#" target="_blank">Non IT Staffing</a>
+                                    
+                                </li>
+                                <li><a href="#" target="_blank" class="hvr-float-shadow" >Office and Home Automation</a></li>
+                                <li><a href="#" class="hvr-float-shadow" >General Staffing</a></li>
+                                <li><a href="#" class="hvr-float-shadow" >Turnkey Design</a></li>
+                                </ul>
                         </div>
                         <div class="col-md-3 p-2">
                         <h4 class="text-white">Connect With Us</h4> <hr>
@@ -242,27 +242,10 @@
 
     <!-- JS
     ============================================ -->
+   <!-- Main JS -->
     <script src="{{ url('web/assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="{{ url('web/assets/js/plugins/popper.min.js') }}"></script>
     <script src="{{ url('web/assets/js/plugins/bootstrap.min.js') }}"></script>
-
-    <!-- Plugins JS -->
     <script src="{{ url('web/assets/js/plugins/swiper-bundle.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/aos.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/waypoints.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/jquery.counterup.min.js') }}"></script>
-    <script src="{{ url('web/assets/js/plugins/appear.min.js') }}"></script>
-
-    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-
-
-    <!-- Main JS -->
     <script src="{{ url('web/assets/js/main.js') }}"></script>
     @yield('js')
 

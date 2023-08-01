@@ -1,7 +1,7 @@
 @extends('web.layout.template')
 @section('main')
             <!-- Page Banner Start -->
-            <div class="section page-banner-section py-5" style="background-image: url({{ url('web/assets/images/bg/brd.jpg') }});">
+            <div class="section page-banner-section py-5 header_background hero-section-4">
                 <div class="container">
                     <!-- Page Banner Wrapper Start -->
                     <div class="page-banner-wrapper">
@@ -9,10 +9,13 @@
                             <div class="col-lg-12">
                                 <!-- Page Banner Content Start -->
                                 <div class="page-banner text-center">
-                                    <h2 class="title ">Outsystems</h2>
+                                    <h2 class="title text-white cursive">Outsystems</h2>
+                                       <!-- <div class="col-4 col-md-4 m-auto">
+                                            <img src="{{ url('web/assets/images/img/outsystems.png') }}" class="img-fluid head_icon" alt="icon">
+                                       </div> -->
                                     <ul class="breadcrumb justify-content-center">
-                                        <li class="breadcrumb-item"><a href="{{ url('/') }}" class="">Home</a></li>
-                                        <li class="breadcrumb-item active " aria-current="page">Outsystems</li>
+                                        <li class="breadcrumb-item text-white"><a href="{{ url('/') }}" class="">Home</a></li>
+                                        <li class="breadcrumb-item active text-white" aria-current="page">Outsystems</li>
                                     </ul>
                                 </div>
                                 <!-- Page Banner Content End -->
@@ -23,30 +26,20 @@
                 </div>
             </div>
             <!-- Page Banner End -->
-            <!-- Report Career Section Start -->
+
             <!-- new section start  -->
-            <div class="section section-padding">
+            <div class="section section-padding bg_color_1">
                 <div class="container">
                     <div class="row">
-                                <div class="col-md-12 align-items-center">
+                                <div class="col-md-12 align-items-center pb-5">
                                     <div class="report-career-content report-career-2-content">
                                         <div class="section-title section-devider">
-                                            <h2 class="title">Outsystems</h2>
+                                            <h2 class="title text-center cursive">The Outsystems Difference</h2>
                                         </div>                                
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12 p-2 text-center">
-                                        <video class="w-100" autoplay loop muted>
-                                            <source src="{{ url('web/assets/images/videos/outsystems2.mp4') }}" type="video/mp4" />
-                                        </video>
-                                </div>
-                                <div class="col-md-6 col-sm-12 p-2">
-                                    <img src="{{ url('web/assets/images/software/outsystems.png') }}" class="img-fluid shadow_drop" alt="outsytems">
-                                </div>
                                 <div class="col-md-12 col-sm-12 p-2">
-                                    <div class="background_hrms">
-                                        <img src="{{ url('web/assets/images/software/outsystems_main.png') }}" class="img-fluid p-5 shadow_drop" alt="outsytems">
-                                    </div>
+                                    <img src="{{ url('web/assets/images/software/outsystems/os1.png') }}" class="img-fluid" alt="icon">
                                 </div>
                     </div>
                 </div>
@@ -54,23 +47,50 @@
             <!-- new section end  -->
 
             <!-- new section start  -->
-            <div class="section section-padding bg_color_1">
+            <div class="section section-padding">
                 <div class="container">
                     <div class="row">
-                                <div class="col-md-6 col-sm-12 p-2 text-center">
-                                    <h1>ATS content</h1>
-                                </div>
-                                <div class="col-md-6 col-sm-12 p-2">
-                                    <img src="{{ url('web/assets/images/software/hrms.png') }}" class="img-fluid shadow_drop" alt="">
-                                </div>
-                                <div class="col-md-12 col-sm-12 p-2">
-                                    <div class="background_ats">
-                                        <img src="{{ url('web/assets/images/software/ats.png') }}" class="img-fluid p-5 shadow_drop" alt="">
-                                    </div>
-                                </div>
+                        <div class="col-md-12 align-items-center pb-5">
+                            <div class="report-career-content report-career-2-content">
+                                <div class="section-title section-devider">
+                                    <h2 class="title text-center cursive">Outsystems Plaforms Overview</h2>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 p-2">
+                                <img src="{{ url('web/assets/images/software/outsystems/os2.png') }}" class="img-fluid" alt="icon">
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- new section end  -->
+
+            <!-- new section start  -->
+            <div class="section section-padding bg_color_1">
+                <div class="container">
+                    <div class="row">
+                                <div class="col-md-12 align-items-center pb-5">
+                                    <div class="report-career-content report-career-2-content">
+                                        <div class="section-title section-devider">
+                                            <h2 class="title text-center cursive">The Process Digitalization with OutSystems</h2>
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-2">
+                                    <img src="{{ url('web/assets/images/software/outsystems/os3.png') }}" class="img-fluid" alt="icon">
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-2">
+                                    <img src="{{ url('web/assets/images/software/outsystems/os4.png') }}" class="img-fluid" alt="icon">
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-2">
+                                    <img src="{{ url('web/assets/images/software/outsystems/os5.png') }}" class="img-fluid" alt="icon">
+                                </div>
+                                <div class="col-md-6 col-sm-12 p-2">
+                                    <img src="{{ url('web/assets/images/software/outsystems/os6.png') }}" class="img-fluid" alt="icon">
+                                </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new section end  -->
 
 @endsection

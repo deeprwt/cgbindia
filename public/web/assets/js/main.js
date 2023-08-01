@@ -247,164 +247,164 @@
     /*--
         Testimonial Active
 	-----------------------------------*/
-      var swiper = new Swiper('.testimonial-active', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        navigation: {
-          nextEl: '.testimonial-active .swiper-button-next',
-          prevEl: '.testimonial-active .swiper-button-prev',
-        },
-        pagination: {
-            el: ".testimonial-active .swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
+      var swiper = new Swiper(".testimonial-active", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          loop: true,
+          autoplay: {
+              delay: 9000, // Set the delay between slides in milliseconds
           },
-          576: {
-            slidesPerView: 1,
+          navigation: {
+              nextEl: ".testimonial-active .swiper-button-next",
+              prevEl: ".testimonial-active .swiper-button-prev",
           },
-          768: {
-            slidesPerView: 1,
+          pagination: {
+              el: ".testimonial-active .swiper-pagination",
+              clickable: true,
           },
-          992: {
-            slidesPerView: 1,
-          }
-        }
-    });
+          breakpoints: {
+              0: {
+                  slidesPerView: 1,
+              },
+              576: {
+                  slidesPerView: 1,
+              },
+              768: {
+                  slidesPerView: 1,
+              },
+              992: {
+                  slidesPerView: 1,
+              },
+          },
+      });
 
-    /*--
+      /*--
         Testimonial-2 Active
 	-----------------------------------*/
-    var swiper = new Swiper('.testimonial-2-active', {
-        slidesPerView: 1,
-        loop: true,
-        navigation: {
-          nextEl: '.testimonial-2-active .swiper-button-next',
-          prevEl: '.testimonial-2-active .swiper-button-prev',
-        },
-    });
+      var swiper = new Swiper(".testimonial-2-active", {
+          slidesPerView: 1,
+          loop: true,
+          navigation: {
+              nextEl: ".testimonial-2-active .swiper-button-next",
+              prevEl: ".testimonial-2-active .swiper-button-prev",
+          },
+      });
 
-    /*--
+      /*--
         Testimonial-4 Active
 	-----------------------------------*/
-    var swiper = new Swiper('.testimonial-4-active', {
-        slidesPerView: 1,
-        loop: true,
-        navigation: {
-          nextEl: '.testimonial-4-active .swiper-button-next',
-          prevEl: '.testimonial-4-active .swiper-button-prev',
-        },
-    });
+      var swiper = new Swiper(".testimonial-4-active", {
+          slidesPerView: 1,
+          loop: true,
+          navigation: {
+              nextEl: ".testimonial-4-active .swiper-button-next",
+              prevEl: ".testimonial-4-active .swiper-button-prev",
+          },
+      });
 
-
-
-    /*--
+      /*--
 		magnificPopup video view 
-	-----------------------------------*/	
-	$('.popup-video').magnificPopup({
-		type: 'iframe'
-	});
+	-----------------------------------*/
+      $(".popup-video").magnificPopup({
+          type: "iframe",
+      });
 
-
-    /*--    
+      /*--    
         Brand Active
     -----------------------------------*/
-    var swiper = new Swiper(".brand-active .swiper-container", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
+      var swiper = new Swiper(".brand-active .swiper-container", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          loop: true,
+          breakpoints: {
+              0: {
+                  slidesPerView: 1,
+              },
+              576: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+              },
+              768: {
+                  slidesPerView: 3,
+              },
+              992: {
+                  slidesPerView: 4,
+              },
           },
-          576: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          992: {
-            slidesPerView: 4,
-          },
-        },
-    });
+      });
 
-
-     /*--
+      /*--
       Isotope Project  
     -----------------------------------*/
-    $('.container').imagesLoaded(function () {
-        var $grid = $('.grid').isotope({
-    
-        });
-        
-        // filter items on button click
-        $('.top-courses-filter ul').on( 'click', 'li', function() {
-          var filterValue = $(this).attr('data-filter');
-          $grid.isotope({ filter: filterValue });
-        });
-        
-        //for menu active class
-        $('.top-courses-filter ul li').on('click', function (event) {
-            $(this).siblings('.active').removeClass('active');
-            $(this).addClass('active');
-            event.preventDefault();
-        });
-    });
+      $(".container").imagesLoaded(function () {
+          var $grid = $(".grid").isotope({});
 
+          // filter items on button click
+          $(".top-courses-filter ul").on("click", "li", function () {
+              var filterValue = $(this).attr("data-filter");
+              $grid.isotope({ filter: filterValue });
+          });
 
-    /*--
+          //for menu active class
+          $(".top-courses-filter ul li").on("click", function (event) {
+              $(this).siblings(".active").removeClass("active");
+              $(this).addClass("active");
+              event.preventDefault();
+          });
+      });
+
+      /*--
         AOS
     -----------------------------------*/
-    
-    AOS.init({
-        duration: 1200,
-        once: true,
-    });
 
+      AOS.init({
+          duration: 1200,
+          once: true,
+      });
 
-/*--    
+      /*--    
     Counter Up
------------------------------------*/  
+-----------------------------------*/
 
-$('.counter').counterUp({
-    delay: 10,
-    time: 1500,
-});
+      $(".counter").counterUp({
+          delay: 10,
+          time: 1500,
+      });
 
-/*--    
+      /*--    
     Progress Bar
------------------------------------*/  
+-----------------------------------*/
 
-if($('.progress-line').length) {
-    $('.progress-line').appear(function(){
-        var el = $(this);
-        var percent = el.data('width');
-        $(el).css('width', percent+'%');
-    }, {accY: 0});
-   }
+      if ($(".progress-line").length) {
+          $(".progress-line").appear(
+              function () {
+                  var el = $(this);
+                  var percent = el.data("width");
+                  $(el).css("width", percent + "%");
+              },
+              { accY: 0 }
+          );
+      }
 
-
-
-    /*--
+      /*--
         Back To Top
     -----------------------------------*/
 
-    // Scroll Event
-    $(window).on('scroll', function () {
-        var scrolled = $(window).scrollTop();
-        if (scrolled > 300) $('.back-btn').addClass('active');
-        if (scrolled < 300) $('.back-btn').removeClass('active');
-    });
+      // Scroll Event
+      $(window).on("scroll", function () {
+          var scrolled = $(window).scrollTop();
+          if (scrolled > 300) $(".back-btn").addClass("active");
+          if (scrolled < 300) $(".back-btn").removeClass("active");
+      });
 
-    // Click Event
-    $('.back-btn').on('click', function () {
-        $("html, body").animate({
-            scrollTop: "0"
-        }, 1200);
-    });
+      // Click Event
+      $(".back-btn").on("click", function () {
+          $("html, body").animate(
+              {
+                  scrollTop: "0",
+              },
+              1200
+          );
+      });
 
+    
